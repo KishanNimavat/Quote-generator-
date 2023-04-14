@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+body {
+  background: radial-gradient(circle at top right,
+      #16222A, #3A6073) no-repeat;
+  background: -webkit-radial-gradient(#16222A, #3A6073);
+  background: -moz-radial-gradient(#16222A, #3A6073);
+  background: radial-gradient(#16222A, #3A6073);
+  overflow-x: hidden;
+}
+
+.app {
+  position: relative;
+  max-width: 1280px;
+  /* margin: auto; */
+}
+
+.quotes-container {
+
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  flex-direction: column;
+  /* height: 100vh; */
+}
+
+.inner-quotes-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 1000px;
+  text-align: center;
+  min-height: 160px;
+  padding: 0 35px;
+  color: gray;
+  border-radius: 10px;
+  background-color: #ABBD73;
+  border: 3px solid #e68933;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.9);
+}
+
+.inner-quotes-container p {
+  font-size: 1.5rem;
+  color: black;
+}
+
+.inner-quotes-container h3 {
+  font-size: 2rem;
+  color: black;
+  font-family: 'Dancing Script', cursive;
+}
+
+.quote-btn {
+  position: relative;
+  top: 50%;
+  left: 5%;
+}
+
+.btn {
+
+  font-weight: 600;
+  background-color: #e68933;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+
+}
+
+
+@media(max-width:1280px) {
+
+  .quote-btn {
+    display: block;
+    clear: both;
+    width: 100%;
+  }
+
+  .quotes-container {
+
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    flex-direction: column;
+    /* height: 100vh; */
+  }
+
+  .inner-quotes-container {
+    width: 70%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .quote-btn {
+    position: relative;
+    top: 50%;
+    left: 5%;
+  }
+}
+
+
+
+@media(max-width:900px) {
+  .quotes-container {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* height: 100vh; */
+  }
+
+  .inner-quotes-container {
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media(max-width:769px) {
+  .quotes-container {
+
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    flex-direction: column;
+    /* height: 100vh; */
+  }
+
+  .inner-quotes-container {
+    width: 70%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .inner-quotes-container p {
+    font-size: 1.2rem;
+  }
+
+  .inner-quotes-container h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media(max-width:570px) {
+
+  body{
+    overflow-x: hidden;
+  }
+  .container {
+    width: 90%;
+  }
+
+  .inner-quotes-container {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .quote-btn {
+    position: relative;
+    top: -2%;
+    left: 35%;
+    margin-top: 35px;
+  }
+}
